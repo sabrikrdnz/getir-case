@@ -1,0 +1,16 @@
+{
+  "family": "getir",
+  "containerDefinitions": [{
+    "name": "current-time",
+    "essential": true,
+    "image": "%ECR_IMAGE%",
+    "memoryReservation": 128,
+    "portMappings": [
+      {
+        "protocol": "tcp",
+        "containerPort": 8080,
+        "hostPort": 8080
+      }
+    ]
+  }]
+}

@@ -1,0 +1,14 @@
+{
+    "serviceName": "go-app",
+    "taskDefinition": "go-app",
+    "loadBalancers": [
+        {
+            "loadBalancerName": "go-app",
+            "containerName": "go-app",
+            "containerPort": 8080
+        }
+    ],
+    
+    "desiredCount": 1,
+    "role": "ecsServiceRole"
+}
